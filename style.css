@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav {
+    background: black;
+    color: white;
+    padding: 1px;
+    padding-left: 2%;
+  }
+  
+  section {
+    width: 100%;
+    margin-top: 1%;
+  }
+  
+  #section-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #section-1 input[type="search"] {
+    width: 85%;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: larger;
+    background-color: #f2f2f2;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  #section-1 input[type="search"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 1% 3%;
+    margin-top: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: large;
+  }
+  
+  button:hover {
+    transform: scaley(1.1);
+    background: gray;
+    cursor: pointer;
+  }
+  
+  #section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 30px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 96%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+  }
+  
+  thead th {
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+  }
+  
+  thead th:nth-child(1) {
+    width: 0;
+  }
+  
+  tbody {
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody tr td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+    font-weight: 500;
+  }
+  
+  /* tbody tr {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  } */
+  
+  .names{
+      font-size: larger;
+  }
+  .names img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .profile-image {
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody td.pass {
+    color: green;
+    font-weight: bold;
+  }
+  
+  tbody td.failed {
+    color: red;
+    font-weight: bold;
+  }
+  
+  
+  /* Style for the "No record found" message */
+  .no-record {
+      font-weight: bold;
+      text-align: center;
+      color: #e74c3c;
+      padding: 20px;
+      background-color: #f2dede; 
+      border: 1px solid #e74c3c; 
+    }
+    
